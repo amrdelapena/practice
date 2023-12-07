@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Button Sound Effect</title>
   <style>
-    body {
+    body 
+    {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -14,7 +15,8 @@
       background-color: #f0f0f0;
     }
 
-    .button {
+    .button 
+    {
       display: inline-block;
       padding: 10px 20px;
       font-size: 16px;
@@ -33,18 +35,21 @@
 
   <script>
     // Function to play sound effect
-    function playSoundEffect() {
+    function playSoundEffect()
+    {
       var audio = new Audio('audio/click.mp3');
       audio.play();
     }
 
     // Function to handle button hover
-    document.getElementById("clickButton").addEventListener("mouseenter", function() {
+    document.getElementById("clickButton").addEventListener("mouseenter", function() 
+    {
       playSoundEffect();
     });
 
     // Function to handle button click
-    document.getElementById("clickButton").addEventListener("click", function() {
+    document.getElementById("clickButton").addEventListener("click", function()
+    {
       playSoundEffect();
       window.location.href = "clicked.html"; // Replace with the actual page URL
     });
