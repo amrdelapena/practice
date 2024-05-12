@@ -5,5 +5,28 @@
 <h1>You clicked!</h1>
 <p>You clicked!</p>
 
+  <button id="clickButton" class="button">Go back to Home</button>
+
+  <script>
+    // Function to play sound effect
+    function playSoundEffect()
+    {
+      var audio = new Audio('audio/clicked.m4a');
+      audio.play();
+    }
+
+    // Function to handle button hover
+    document.getElementById("clickButton").addEventListener("mouseenter", function() 
+    {
+      playSoundEffect();
+    });
+
+    // Function to handle button click
+    document.getElementById("clickButton").addEventListener("click", function()
+    {
+      playSoundEffect();
+      window.location.href = "index.html";
+    });
+  
 </body>
 </html>
