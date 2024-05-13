@@ -31,20 +31,30 @@
       cursor: pointer;
     }
 
-    .center {
+    .top-centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     }
-    
+
+    .container {
+    position: relative;
+    top: 20px; /* Margin from the top */
+    text-align: center; /* Center the content horizontally */
+    }
+
+    .container img {
+    display: inline-block; /* Display the image as an inline block */
+    }
+
   </style>
 </head>
 <body>
 
-<div style="position: relative;">
-   <img src="images/De_La.png" style="position: absolute; left: 120px; top: 50px;">
-</div>
+  <div class="container">
+   <img src="images/De_La.png" class:top-centered>
+  </div>
 
 <!--   <button id="clickButton" class="button">Aliyah Mae's Wishlist</button>
 
