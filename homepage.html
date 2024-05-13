@@ -1,1 +1,62 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aliyah's Website</title>
+  <style>
+    body 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200vh;
+      margin: 0;
+      background-image: url('images/Homepage Wallpaper.jpg');
+    }
+
+    .button 
+    {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #691580;
+      background-color: #ffa0a0;
+      border-radius: 10px;
+      border-color: #ffffff;
+      cursor: pointer;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <button id="clickButton" class="button">Aliyah Mae's Wishlist</button>
+
+  <script>
+    // Function to play sound effect
+    function playSoundEffect()
+    {
+      var audio = new Audio('audio/clicked.m4a');
+      audio.play();
+    }
+
+    // Function to handle button hover
+    document.getElementById("clickButton").addEventListener("mouseenter", function() 
+    {
+      playSoundEffect();
+    });
+
+    // Function to handle button click
+    document.getElementById("clickButton").addEventListener("click", function()
+    {
+      playSoundEffect();
+      window.location.href = "clicked.html";
+    });
+  </script>
+
+</body>
+</html>
